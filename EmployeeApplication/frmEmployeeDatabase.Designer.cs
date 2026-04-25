@@ -30,6 +30,7 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             controlBox1 = new ReaLTaiizor.Controls.ControlBox();
             bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             panel1 = new Panel();
@@ -216,17 +217,19 @@
             btnSubmit.TabIndex = 9;
             btnSubmit.Text = "Submit";
             btnSubmit.TextAlignment = StringAlignment.Center;
+            btnSubmit.Click += btnSubmit_Click;
             // 
             // dgvEmployeeList
             // 
             dgvEmployeeList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvEmployeeList.BackgroundColor = Color.FromArgb(69, 69, 69);
+            dgvEmployeeList.BorderStyle = BorderStyle.None;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.FromArgb(45, 45, 48);
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F);
             dataGridViewCellStyle1.ForeColor = Color.FromArgb(0, 122, 204);
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(45, 45, 48);
+            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(0, 122, 204);
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgvEmployeeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvEmployeeList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -234,7 +237,7 @@
             dataGridViewCellStyle2.BackColor = Color.FromArgb(69, 69, 69);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F);
             dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(75, 75, 79);
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             dgvEmployeeList.DefaultCellStyle = dataGridViewCellStyle2;
@@ -242,6 +245,14 @@
             dgvEmployeeList.Location = new Point(359, 95);
             dgvEmployeeList.Margin = new Padding(3, 3, 10, 3);
             dgvEmployeeList.Name = "dgvEmployeeList";
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(69, 69, 69);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 12F);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(75, 75, 79);
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvEmployeeList.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvEmployeeList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvEmployeeList.Size = new Size(522, 321);
             dgvEmployeeList.TabIndex = 10;
