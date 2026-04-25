@@ -228,6 +228,7 @@
             dataGridViewCellStyle1.BackColor = Color.FromArgb(45, 45, 48);
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F);
             dataGridViewCellStyle1.ForeColor = Color.FromArgb(0, 122, 204);
+            dataGridViewCellStyle1.Padding = new Padding(3);
             dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(45, 45, 48);
             dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(0, 122, 204);
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
@@ -237,6 +238,7 @@
             dataGridViewCellStyle2.BackColor = Color.FromArgb(69, 69, 69);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F);
             dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.Padding = new Padding(3);
             dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(75, 75, 79);
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
@@ -249,6 +251,7 @@
             dataGridViewCellStyle3.BackColor = Color.FromArgb(69, 69, 69);
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 12F);
             dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.Padding = new Padding(3);
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(75, 75, 79);
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
